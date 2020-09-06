@@ -1,4 +1,4 @@
-{% set version = "0.7.1" %}
+{% set version = "0.8" %}
 
 package:
   name: pygeos
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/pygeos/pygeos-{{ version }}.tar.gz
-  sha256: d2d549f2ffba5ed29cdf499f7e6b390603f964021892c94e567810c5ee3296a1
+  sha256: 45b7e1aaa5fc9ff53565ef089fb75c53c419ace8cee18385ec1d7c1515c17cbc
 
 build:
   number: 0
