@@ -36,7 +36,7 @@ test:
   imports:
     - pygeos
   commands:
-    - pytest
+    - pytest --verbose --pyargs pygeos
 
 
 about:
