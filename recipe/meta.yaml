@@ -31,12 +31,14 @@ requirements:
     - geos
 
 test:
-  requires:
-    - pytest
   imports:
     - pygeos
+  source_files:
+    - pygeos/test
+  requires:
+    - pytest
   commands:
-    - pytest --verbose --pyargs pygeos
+    - pytest --verbose
 
 
 about:
