@@ -31,8 +31,13 @@ requirements:
     - geos
 
 test:
+  requires:
+    - pytest
   imports:
     - pygeos
+  commands:
+    - pytest
+
 
 about:
   home: https://github.com/caspervdw/pygeos
