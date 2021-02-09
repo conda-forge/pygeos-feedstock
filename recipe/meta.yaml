@@ -33,8 +33,8 @@ requirements:
 test:
   imports:
     - pygeos
-  source_files:
-    - pygeos/test
+  files:
+    - test
   requires:
     - pytest
   commands:
@@ -42,7 +42,7 @@ test:
 
 
 about:
-  home: https://github.com/caspervdw/pygeos
+  home: https://github.com/pygeos/pygeos
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
