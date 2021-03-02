@@ -35,7 +35,7 @@ test:
     - pygeos
 
 about:
-  home: https://github.com/caspervdw/pygeos
+  home: https://github.com/pygeos/pygeos
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
@@ -47,7 +47,7 @@ about:
     PyGEOS wraps these operations in NumPy ufuncs providing a performance
     improvement when operating on arrays of geometries.
   doc_url: https://pygeos.readthedocs.io/en/latest/
-  dev_url: https://github.com/caspervdw/pygeos
+  dev_url: https://github.com/pygeos/pygeos
 
 extra:
   recipe-maintainers:

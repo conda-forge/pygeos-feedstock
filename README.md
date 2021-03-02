@@ -1,7 +1,7 @@
 About pygeos
 ============
 
-Home: https://github.com/caspervdw/pygeos
+Home: https://github.com/pygeos/pygeos
 
 Package license: BSD-3-Clause
 
@@ -9,7 +9,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pygeos-feedstoc
 
 Summary: Wraps GEOS geometry functions in numpy ufuncs
 
-Development: https://github.com/caspervdw/pygeos
+Development: https://github.com/pygeos/pygeos
 
 Documentation: https://pygeos.readthedocs.io/en/latest/
 
