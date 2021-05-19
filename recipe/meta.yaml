@@ -30,8 +30,11 @@ requirements:
     - geos
 
 test:
-  imports:
-    - pygeos
+  requires:
+    - pytest
+  commands:
+    - git clone https://github.com/pygeos/pygeos pygeos-repo --branch {{ version }} --depth 1
+    - pytest pygeos-repo/pygeos/test
 
 about:
   home: https://github.com/caspervdw/pygeos
