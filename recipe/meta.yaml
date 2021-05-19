@@ -35,7 +35,9 @@ test:
     - pytest
   commands:
     - git clone https://github.com/pygeos/pygeos pygeos-repo --branch {{ version }} --depth 1
-    - pytest pygeos-repo/pygeos/test
+    - mkdir pygeos-test
+    - cp -r pygeos-repo/pygeos/test pygeos-test/test
+    - pytest pygeos-test/test
 
 about:
   home: https://github.com/caspervdw/pygeos
