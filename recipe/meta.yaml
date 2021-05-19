@@ -31,6 +31,7 @@ requirements:
 
 test:
   requires:
+    - git
     - pytest
   commands:
     - git clone https://github.com/pygeos/pygeos pygeos-repo --branch {{ version }} --depth 1
