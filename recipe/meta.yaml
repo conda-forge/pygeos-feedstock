@@ -1,4 +1,4 @@
-{% set version = "0.10.1" %}
+{% set version = "0.10.2" %}
 
 package:
   name: pygeos
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/pygeos/pygeos-{{ version }}.tar.gz
-  sha256: c14e6dd03c49a3cd64e4badefcdf229b7b06ff75e15b35ba59974a2c16fa30d9
+  sha256: 08cd7fe047a7d7f9f94eaa9a65e0b4fd4057ffebc15e6179a0290a9576a0bbbc
 
 build:
   number: 0
@@ -35,22 +35,24 @@ requirements:
     - geos
 
 test:
-  imports:
-    - pygeos
+  requires:
+    - pytest
+  commands:
+    - pytest --pyargs pygeos.tests
 
 about:
   home: https://github.com/pygeos/pygeos
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: Wraps GEOS geometry functions in numpy ufuncs
+  summary: GEOS wrapped in numpy ufuncs
 
   description: |
     PyGEOS is a C/Python library with vectorized geometry functions.
     The geometry operations are done in the open-source geometry library GEOS.
     PyGEOS wraps these operations in NumPy ufuncs providing a performance
     improvement when operating on arrays of geometries.
-  doc_url: https://pygeos.readthedocs.io/en/latest/
+  doc_url: https://pygeos.readthedocs.io/
   dev_url: https://github.com/pygeos/pygeos
 
 extra:
