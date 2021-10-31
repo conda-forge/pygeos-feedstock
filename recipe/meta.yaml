@@ -1,4 +1,4 @@
-{% set version = "0.10.2" %}
+{% set version = "0.11.1" %}
 
 package:
   name: pygeos
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/pygeos/pygeos-{{ version }}.tar.gz
-  sha256: 08cd7fe047a7d7f9f94eaa9a65e0b4fd4057ffebc15e6179a0290a9576a0bbbc
+  sha256: c9371ce412ab28e2d0e90a9d65e42eb9933d0dc33edf36c575d56187c6183acf
 
 build:
-  number: 1
+  number: 0
   skip: true  # [py2k]
   script:
     - set GEOS_INCLUDE_PATH=%LIBRARY_INC%  # [win]
