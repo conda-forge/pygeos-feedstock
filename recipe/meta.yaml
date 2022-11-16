@@ -9,7 +9,7 @@ source:
   sha256: 1c373078aad5a2efed1c39cd71c797aa2033bf3087f35f7516bac89be50b9861
 
 build:
-  number: 1
+  number: 2
   skip: true  # [py2k]
   script:
     - set GEOS_INCLUDE_PATH=%LIBRARY_INC%  # [win]
